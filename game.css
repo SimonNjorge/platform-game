@@ -1,3 +1,8 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .game {
     overflow: hidden;
     max-width: 600px;
@@ -32,4 +37,13 @@
 }
 .won .player {
     box-shadow:-4px-7px 8px white, 4px-7px 8px white;
+}
+#restart:focus{
+    outline: none;
+}
+
+@media (max-width: 600px){
+    #results{
+        flex-direction: column;
+    }
 }

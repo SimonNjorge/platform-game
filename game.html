@@ -10,6 +10,13 @@
     <p style="font-size: large; font-weight: 600; color: blueviolet; text-align: center;">
         My Platform Game
     </p>
-    <script src="game.js"></script>
+    <div id="results" style="display: flex; align-items: center; gap: 24px;">
+        <p id="status" style="font-size: large; color: green; font-weight: 600"></p>
+        <button id="restart" style="cursor: pointer; border: 1px solid wheat; background-color: rgb(52, 166, 251); color: white; padding: 4px 8px; border-radius: 8px;">
+            restart level
+        </button>
+        <p style="color: gray;">Collect the coins (yellow boxes) to win a level.</p>
+    </div>
+    <script type="module" src="./run-game.js"></script>
 </body>
 </html>
