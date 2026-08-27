@@ -41,9 +41,12 @@ body{
 #restart:focus{
     outline: none;
 }
-
+#results{
+    align-self: flex-start;
+    gap: 24px;
+}
 @media (max-width: 600px){
     #results{
-        flex-direction: column;
+        gap: 6px;
     }
 }

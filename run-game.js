@@ -28,8 +28,9 @@ function runAnimation (frameFunc) {
 function runLevel (level, Display) {
     //remove the current game layout if any is present
     let currentGameDom = document.querySelector('.game');
+    const gameDOMCont = document.getElementById('game-cont');
     if(currentGameDom) currentGameDom.remove();
-    let display = new Display(document.body, level);
+    let display = new Display(gameDOMCont, level);
     let state = State.start(level);
     /*when the level is finished (lost or won),
     runLevel waits two more second (to let the user see what happens) and
@@ -83,6 +84,4 @@ runGame(gameLevels, DOMDisplay);
 
 restart.addEventListener('click', () => {
     runGame(gameLevels, DOMDisplay)
-})
-
-
+});
