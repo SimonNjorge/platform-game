@@ -1,6 +1,5 @@
 import { Lava, Player, Coin } from "./actors.js";
 
-
 //levelChar object - maps plan characters to either background grid types or actor classes
 const levelChars = {
     ".": "empty", "#": "wall", "+": "lava",
