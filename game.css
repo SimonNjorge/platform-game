@@ -45,6 +45,13 @@ body{
     align-self: flex-start;
     gap: 24px;
 }
+#left, #right, #up{
+  -webkit-user-select: none; /* Safari and iOS */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE 10+ */
+  user-select: none;         /* Standard */
+  -webkit-touch-callout: none; /* Disables the default iOS long-press menu */
+}
 @media (max-width: 600px){
     #results{
         gap: 6px;
