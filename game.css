@@ -4,7 +4,7 @@ body{
     align-items: center;
 }
 .game {
-    overflow: hidden;
+    overflow: scroll;
     max-width: 600px;
     max-height: 450px;
     position: relative;
