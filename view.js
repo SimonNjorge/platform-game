@@ -63,7 +63,7 @@ DOMDisplay.prototype.syncState = function (state) {
     //this.dom holds the drawn grids, the drawn actors are absolutely positioned relative to the outer (.game class) container
     this.dom.appendChild(this.actorLayer);
     this.dom.className = `game ${state.status}`;
-   // this.scrollPlayerIntoView(state);
+    this.scrollPlayerIntoView(state);
 }
 
 //this ensures if a level is protruding outside the viewport, we scroll the viewport to make sure the player is near its center.
