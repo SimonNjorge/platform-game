@@ -1,6 +1,7 @@
 **Repo contains code for a simple platform game**
 
-Directory Layout: 
+# Directory Layout
+
 ├── /root
 
 ├── ./actors.js - Handles   actor classes and their implementation
